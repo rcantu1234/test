@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Rock, Paper, Scissors Game</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      const choice1 = prompt("User1, please enter Rock, Paper, or Scissors!!!");
+      const choice2 = prompt("User2, please enter Rock, Paper, or Scissors!!!");
+
+      function paper() {
+        if (choice1 === "paper") {
+          if (choice2 === "rock") {
+              alert("paper wins");
+          } else {
+              if (choice2 === "scissors") {
+                  alert("scissors wins");
+              }
+           }
+         }
+       }
+
+      function scissors() {
+        if (choice1 === "scissors") {
+            if (choice2 === "rock") {
+                alert("rock wins");
+            } else {
+                if (choice2 === "paper") {
+                    alert( "scissors wins");
+                }
+            }
+        }
+      }
+
+      function rock() {
+        if (choice1 === "rock") {
+            if (choice2 === "scissors") {
+                alert("rock wins");
+            } else {
+                if (choice2 === "paper") {
+                    alert( "paper wins");
+                }
+            }
+        }
+      }
+
+      paper();
+      scissors();
+      rock();
+    </script>
+
+  </body>
+</html>
